@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="head">
+                <h2>CASIO</h2>
+                <div>
+                    <span>fx991ES</span>
+                    <p>natural Display</p>
+                </div>
+            </div>
+            <div class="watch" id="output"></div>
+            <div class="body">
+                <div class="row">
+                    <span onclick="display(`0`)">0</span>
+                    <span onclick="display(`.`)">.</span>
+                    <span onclick="Ans()" id="value" >Ans</span>
+                    <span style="width: 100px;" onclick="Calc()">=</span>
+                </div>
+                <div class="row">
+                    <span onclick="display('1')">1</span>
+                    <span onclick="display('2')">2</span>
+                    <span onclick="display('3')">3</span>
+                    <span onclick="display('+')">+</span>
+                    <span onclick="display('-')">-</span>
+                </div>
+                <div class="row">
+                    <span onclick="display('4')">4</span>
+                    <span onclick="display('5')">5</span>
+                    <span onclick="display('6')">6</span>
+                    <span onclick="display('*')">*</span>
+                    <span onclick="display('/')">/</span>
+                </div>
+                <div class="row">
+                    <span onclick="display('7')">7</span>
+                    <span onclick="display('8')">8</span>
+                    <span onclick="display('9')">9</span>
+                    <span onclick="Delete()">DeL</span>
+                    <span onclick="Clear()">AC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
